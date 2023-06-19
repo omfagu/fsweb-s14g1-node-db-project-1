@@ -15,7 +15,6 @@ const getById = (id) => {
 };
 
 const getByName = (name) => {
-  //select * from accounts where name = '{name}' limit 1
   return db("accounts").where("name", name).first();
 };
 
